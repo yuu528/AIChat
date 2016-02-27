@@ -1,0 +1,44 @@
+name: AIChat
+main: yuu528\AIChat
+author: yuu528
+version: 1.1
+api: [1.13.0]
+load: STARTUP
+description: PlayerChatEvent to AI
+commands:
+ aichat:
+  desciption: AIChat UnAuto
+  usage: /aichat <Chat>
+  permission: aichat.cmd
+ aiadd:
+  desciption: AIChat Trigger Add
+  usage: /aiadd <Message> <Return>
+  permission: aiadd.cmd
+ aidel:
+  desciption: AIChat Trigger Delete
+  usage: /aidel <Message>
+  permission: aidel.cmd
+ ailist:
+  desciption: AIChat Trigger List
+  usage: /ailist
+  permission: ailist.cmd
+ ainame:
+  desciption: Change/Check AI Name
+  usage: /ainame [NewName]
+  permission: ainame.cmd
+permissions:
+ aichat.cmd:
+  default: op
+  description: aichat command accept
+ aiadd.cmd:
+  default: op
+  description: aiadd command accept
+ aidel.cmd:
+  default: op
+  description: aidel command accept
+ ailist.cmd:
+  default: true
+  description: ailist command accept
+ ainame.cmd:
+  default: op
+  description: ainame command accept
